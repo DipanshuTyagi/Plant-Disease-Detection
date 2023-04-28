@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Plant Disease Detection
+{% endblock pagetitle %}
+{% block body %}
+<style>
+
+
+
+* {
+    box-sizing: border-box;
+    /* border-radius: 25px; */
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .gallery-item {
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  .gallery-item img {
+    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+
+  .gallery-item:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+  .img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 206, 84, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.img__description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+
+.gallery-item:hover .img__description {
+  transform: translateY(0);
+}
+
+
+  @media only screen and (max-width: 768px) {
+    .gallery-item {
+      width: calc(50% - 20px);
+    }
+   
+  }
+
+  @media only screen and (max-width: 480px) {
+    .gallery-item {
+      width: calc(100% - 20px);
+    }
+
+  }
+
+
+
+</style>
+
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>🍁Plant Disease
+                Detection🍁 </b></h1>
+        <p class="lead" style="font-weight: 500;color: black;">This AI Engine Will Help To Detect Disease From Following Fruites And Veggies</p>
+    </div>
+</div>
+
+<center class="laptop">
+    <a href="/index">
+    <button class = "bttn-pill bttn-lg btn-success"><b style="color: black;">AI Engine</b></button>
+</a>
+</center>
+
+<div class="gallery">
+  
+  <div class="gallery-item"  >
+   
+    <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-apple-seb-plant_600x600.jpg?v=1634213432" alt="Image 1">
+    
+
+    <div class="img__description_layer">
+      
+      <a href="https://nurserylive.com/products/apple-seb-plant" target="_blank"><p class="img__description">Apple</p></a>
+      
+    </div>
+    
+</div>
+  
+  
+  
+  
+  <div class="gallery-item" >
+    <img src="https://e5b6p7m4.rocketcdn.me/wp-content/uploads/2020/06/Fresh-Blueberry-600x749.jpg" alt="Image 2">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>
+  </div>
+  <div class="gallery-item" >
+    <img src="https://static.libertyprim.com/files/varietes/cerise-burlat-large.jpg?1569344439" alt="Image 3">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>
+  </div>
+  <div class="gallery-item" >
+    <img src="https://cdn.shopify.com/s/files/1/0451/1101/7626/products/maizeseeds.jpg?v=1604034397" alt="Image 4">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>
+  </div>
+  <div class="gallery-item" >
+    <img src="https://cf.ltkcdn.net/wine/images/std/165373-800x532r1-grapes.jpg" alt="Image 5">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>
+  </div>
+  <div class="gallery-item" >
+    <img src="https://chefsmandala.com/wp-content/uploads/2018/03/Orange.jpg" alt="Image 6">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>
+  </div>
+  <div class="gallery-item" >
+    <img src="https://media.istockphoto.com/id/153564958/photo/colorful-peppers.jpg?s=612x612&w=0&k=20&c=7Ce6whyOFcnTQi74emPSwAdaXEcdMQI1JVNjfeTRP-Y=" alt="Image 7">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>
+  </div>
+  <div class="gallery-item" >
+    <img src="https://www.jiomart.com/images/product/600x600/590000090/potato-1-kg-product-images-o590000090-p590000090-0-202207291750.jpg" alt="Image 8">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>  
+  </div>
+  <div class="gallery-item" >
+    <img src="https://cdn.shopify.com/s/files/1/0581/2151/9284/products/48_750x810.jpg?v=1627404511" alt="Image 9">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>
+  </div>
+  <div class="gallery-item" >
+    <img src="https://s.alicdn.com/@sc04/kf/A89cf9d1d5d0d4de0a0dfd34ed0e5ee67U.jpg_300x300.jpg" alt="Image 10">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>
+  </div>
+  <div class="gallery-item" >
+    <img src="https://www.cellsii.com/images/detailed/20/strawberry-price-in-Bangladesh.jpg" alt="Image 11">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>
+  </div>
+  <div class="gallery-item" >
+    <img src="https://jugais.com/wp-content/uploads/2020/07/tomate-1.jpg" alt="Image 12">
+    <div class="img__description_layer">
+      <p class="img__description">Apple</p>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock body %}
